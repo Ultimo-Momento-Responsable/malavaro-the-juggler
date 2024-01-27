@@ -31,7 +31,10 @@
   "physicsStartAwake": true,
   "properties": [],
   "solid": false,
-  "spriteId": null,
+  "spriteId": {
+    "name": "spr_scimitar",
+    "path": "sprites/spr_scimitar/spr_scimitar.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
