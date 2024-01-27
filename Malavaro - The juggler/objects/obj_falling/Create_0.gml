@@ -7,3 +7,5 @@ img_angle_spd = 0;
 image_speed = 0.2;
 score_points = 100;
 bounces = 0;
+timer = irandom_range(120, 240);
+position = 0;
