@@ -11,6 +11,10 @@ angular_speed = 20;
 angular_inertia = 0.15;
 angular_bounce = 1;
 image_speed = 0.2;
+
+is_idle = true;
+idle_time = 0;
+idle_countdown = 0;
 function calculate_speed_increment(_current_speed, _current_direction) {
 	var _abs_current_speed = abs(_current_speed)
 	return _abs_current_speed >= max_h_speed ? 0 : _current_direction * h_speed * inertia;
