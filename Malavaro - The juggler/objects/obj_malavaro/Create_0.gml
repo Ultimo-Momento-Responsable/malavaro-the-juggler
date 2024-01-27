@@ -11,7 +11,7 @@ angular_speed = 20;
 angular_inertia = 0.15;
 angular_bounce = 1;
 image_speed = 0.2;
-
+depth = 1;
 is_idle = true;
 idle_time = 0;
 idle_countdown = 0;
@@ -48,4 +48,11 @@ function get_tilt(_angle) {
 		return -1;
 	}
 	return 0;
+}
+
+
+function change_direction_on_collision(_speed) {
+	var _old_direction = direction;
+	hspeed = _speed;
+	return hspeed < 0 ? -1 : 1;
 }

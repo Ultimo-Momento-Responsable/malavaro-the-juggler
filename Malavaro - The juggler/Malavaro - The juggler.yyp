@@ -52,6 +52,7 @@
     {"id":{"name":"fnt_game_over","path":"fonts/fnt_game_over/fnt_game_over.yy",},},
     {"id":{"name":"obj_elephant","path":"objects/obj_elephant/obj_elephant.yy",},},
     {"id":{"name":"ac_balance_object","path":"animcurves/ac_balance_object/ac_balance_object.yy",},},
+    {"id":{"name":"ac_throw_objects","path":"animcurves/ac_throw_objects/ac_throw_objects.yy",},},
     {"id":{"name":"spr_pin","path":"sprites/spr_pin/spr_pin.yy",},},
     {"id":{"name":"spr_malavaro","path":"sprites/spr_malavaro/spr_malavaro.yy",},},
     {"id":{"name":"obj_ball","path":"objects/obj_ball/obj_ball.yy",},},

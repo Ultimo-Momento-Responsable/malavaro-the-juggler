@@ -3,22 +3,42 @@
 timer --;
 
 if (timer == 0) {
+	is_idle = false;
 	var _initial_angle = position == 0 ? 30 : 120;
 	direction = random_range(_initial_angle, _initial_angle + 50);
 	speed = spd;
 	gravity = spd_gravity;
 	img_angle_spd = angle_spd;
-	is_idle = false;
+	if position == 0 image_xscale = -1;
+	percentage = 0;
 }
 
 if (is_idle) {
 	percentage += 1/120;
-	var _position_x = animcurve_channel_evaluate(curve_x, percentage);
-	var _position_y = animcurve_channel_evaluate(curve_y, percentage);
-	
+	var _position_x = animcurve_channel_evaluate(idle_anim_x, percentage);
+	var _position_y = animcurve_channel_evaluate(idle_anim_y, percentage);
+	if position == 0 image_xscale = -1;
 	x = (start_position[0] + _position_x * 20);
 	y = (start_position[1] + _position_y * 20);
 	if percentage >= 1 percentage = 0;
+}
+
+if (in_collision) {
+	percentage += 1/anim_timer;
+	var _position = animcurve_channel_evaluate(collision_anim, percentage);
+	x = malavaro.x;
+	y = start_position[1] + _position * 20;
+	if (percentage == 1) {
+		in_collision = false;
+		bounces ++;
+		direction = img_angle_in_collision;
+		speed = spd;
+	}
+}
+
+if (!is_idle && !in_collision) {
+	start_position[0] = x;
+	start_position[1] = y;
 }
 
 if (bounces > 0) {
