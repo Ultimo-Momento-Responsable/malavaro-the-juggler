@@ -32,8 +32,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Sprite2",
-    "path": "sprites/Sprite2/Sprite2.yy",
+    "name": "spr_scimitar",
+    "path": "sprites/spr_scimitar/spr_scimitar.yy",
   },
   "spriteMaskId": null,
   "visible": true,

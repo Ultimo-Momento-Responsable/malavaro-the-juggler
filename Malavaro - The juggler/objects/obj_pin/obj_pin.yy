@@ -1,7 +1,7 @@
 {
   "resourceType": "GMObject",
   "resourceVersion": "1.0",
-  "name": "obj_falling",
+  "name": "obj_pin",
   "eventList": [
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":0,"isDnD":false,},
     {"resourceType":"GMEvent","resourceVersion":"1.0","name":"","collisionObjectId":null,"eventNum":0,"eventType":3,"isDnD":false,},
@@ -12,7 +12,10 @@
     "name": "Objetos",
     "path": "folders/Objetos.yy",
   },
-  "parentObjectId": null,
+  "parentObjectId": {
+    "name": "obj_falling",
+    "path": "objects/obj_falling/obj_falling.yy",
+  },
   "persistent": false,
   "physicsAngularDamping": 0.1,
   "physicsDensity": 0.5,
@@ -27,8 +30,11 @@
   "physicsShapePoints": [],
   "physicsStartAwake": true,
   "properties": [],
-  "solid": true,
-  "spriteId": null,
+  "solid": false,
+  "spriteId": {
+    "name": "spr_pin",
+    "path": "sprites/spr_pin/spr_pin.yy",
+  },
   "spriteMaskId": null,
   "visible": true,
 }
