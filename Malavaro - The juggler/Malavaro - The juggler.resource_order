@@ -27,6 +27,6 @@
     {"name":"obj_scimitar","order":5,"path":"objects/obj_scimitar/obj_scimitar.yy",},
     {"name":"obj_elephant","order":1,"path":"objects/obj_elephant/obj_elephant.yy",},
     {"name":"spr_pin","order":2,"path":"sprites/spr_pin/spr_pin.yy",},
-    {"name":"Sprite5","order":1,"path":"sprites/Sprite5/Sprite5.yy",},
+    {"name":"spr_malavaro","order":1,"path":"sprites/spr_malavaro/spr_malavaro.yy",},
   ],
 }

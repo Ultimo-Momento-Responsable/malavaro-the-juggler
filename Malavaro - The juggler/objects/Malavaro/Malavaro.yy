@@ -29,8 +29,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "Sprite5",
-    "path": "sprites/Sprite5/Sprite5.yy",
+    "name": "spr_malavaro",
+    "path": "sprites/spr_malavaro/spr_malavaro.yy",
   },
   "spriteMaskId": null,
   "visible": true,
