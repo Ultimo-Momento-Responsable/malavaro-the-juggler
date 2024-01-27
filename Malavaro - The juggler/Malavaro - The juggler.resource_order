@@ -26,6 +26,7 @@
     {"name":"spr_scimitar","order":3,"path":"sprites/spr_scimitar/spr_scimitar.yy",},
     {"name":"spr_ball","order":4,"path":"sprites/spr_ball/spr_ball.yy",},
     {"name":"obj_scimitar","order":5,"path":"objects/obj_scimitar/obj_scimitar.yy",},
+    {"name":"fnt_game_over","order":1,"path":"fonts/fnt_game_over/fnt_game_over.yy",},
     {"name":"obj_elephant","order":1,"path":"objects/obj_elephant/obj_elephant.yy",},
     {"name":"spr_pin","order":2,"path":"sprites/spr_pin/spr_pin.yy",},
     {"name":"spr_malavaro","order":1,"path":"sprites/spr_malavaro/spr_malavaro.yy",},

@@ -13,3 +13,10 @@ if (!instance_exists(right_object)) {
 	right_object = instance_create_depth(room_width- 120, 120, 0, objects[irandom(array_length(objects) - 1)]);
 	right_object.position = 1;
 }
+
+if (lives_left < 0) {
+	// Game Over
+	instance_destroy(right_object);
+	instance_destroy(left_object);
+	instance_destroy(obj_malavaro);
+}

@@ -30,6 +30,7 @@ if (bounces > 0) {
 
 if((y - sprite_height) > room_height) {
 	// Should explode
+	obj_game_controller.lives_left --;
 	instance_destroy(self);
 }
 	

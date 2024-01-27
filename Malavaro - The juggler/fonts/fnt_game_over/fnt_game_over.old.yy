@@ -1,7 +1,7 @@
 {
   "resourceType": "GMFont",
   "resourceVersion": "1.0",
-  "name": "fnt_score",
+  "name": "fnt_game_over",
   "AntiAlias": 1,
   "applyKerning": 0,
   "ascender": 37,
