@@ -31,8 +31,8 @@
   "properties": [],
   "solid": false,
   "spriteId": {
-    "name": "spr_contortionist",
-    "path": "sprites/spr_contortionist/spr_contortionist.yy",
+    "name": "spr_contortionist1",
+    "path": "sprites/spr_contortionist1/spr_contortionist1.yy",
   },
   "spriteMaskId": null,
   "visible": true,

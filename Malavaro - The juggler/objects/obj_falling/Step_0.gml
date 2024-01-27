@@ -3,18 +3,19 @@
 timer --;
 
 if (timer == 0) {
+	is_iddle = false;
 	var _initial_angle = position == 0 ? 30 : 120;
 	direction = random_range(_initial_angle, _initial_angle + 50);
 	speed = spd;
 	gravity = spd_gravity;
 	img_angle_spd = angle_spd;
+	if position == 0 image_xscale = -1;
 }
 
 if (is_iddle) {
 	percentage += 1/120;
 	var _position_x = animcurve_channel_evaluate(curve_x, percentage);
 	var _position_y = animcurve_channel_evaluate(curve_y, percentage);
-	show_debug_message(_position_y, _position_x);
 	x = (start_position[0] + _position_x * 20);
 	y = (start_position[1] + _position_y * 20);
 	if percentage >= 1 percentage = 0;

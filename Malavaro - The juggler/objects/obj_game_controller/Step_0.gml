@@ -8,6 +8,8 @@
 if (!instance_exists(left_object)) {
 	left_object = instance_create_depth(120, 120, 0, objects[irandom(array_length(objects) - 1)]);
 	left_object.position = 0;
+	left_object.image_xscale = -1;
+	left_object.angle_spd *= -1;
 }
 if (!instance_exists(right_object)) {
 	right_object = instance_create_depth(room_width- 120, 120, 0, objects[irandom(array_length(objects) - 1)]);
