@@ -1,6 +1,6 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
 event_inherited();
-image_angle += 5;
+image_angle += img_angle_spd;
 
 

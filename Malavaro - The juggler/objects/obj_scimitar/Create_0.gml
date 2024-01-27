@@ -1,7 +1,9 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
 event_inherited();
-gravity = 0.5;
+img_angle_spd = 0;
+angle_spd = 25;
+spd_gravity = 0.5;
 
 
 
