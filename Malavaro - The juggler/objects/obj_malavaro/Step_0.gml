@@ -9,11 +9,11 @@ if(speed == 0 && image_angle == 0) {
 // Check input
 var _current_direction = 0;
 
-if (keyboard_check(vk_right)) {
+if (keyboard_check(vk_right) || keyboard_check(ord("D"))) {
 	_current_direction = 1;
 }
 
-if (keyboard_check(vk_left)) {
+if (keyboard_check(vk_left) || keyboard_check(ord("A"))) {
 	_current_direction = -1;
 }
 
@@ -71,6 +71,8 @@ if (place_meeting(x, y, obj_falling)) {
 		_obj_collision.speed += abs(speed/2);
 	}
 }
+
+// Malavaro hit edge screen
 if (x <= sprite_width/2 || x >= room_width - sprite_width/2) {
 	speed = 0;
 	x = x <= sprite_width/2 ? sprite_width/2 + 1 : room_width - sprite_width/2 - 1;
