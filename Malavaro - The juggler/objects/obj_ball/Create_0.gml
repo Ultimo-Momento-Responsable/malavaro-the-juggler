@@ -3,7 +3,7 @@
 event_inherited();
 img_angle_spd = 0;
 angle_spd = 19;
-
+score_points = 500;
 
 
 

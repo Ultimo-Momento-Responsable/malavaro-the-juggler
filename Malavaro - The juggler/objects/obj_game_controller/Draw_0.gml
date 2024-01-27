@@ -15,15 +15,8 @@ if (lives_left >= 0) {
 	draw_set_color(c_white);
 	draw_set_halign(fa_left);
 	draw_text_ext(48, 48, _txt_lives, 0, 250);
-	
-	draw_set_color(c_black);
-	var _rect_score_width;
-	var _rect_lives_width;
-	var _rect_height = 48;
 } else {
 	// Draw Game Over Screen
-	draw_set_alpha(1);
-	
 	draw_set_font(fnt_game_over);
 	draw_set_color(c_white);
 	draw_set_halign(fa_center);
