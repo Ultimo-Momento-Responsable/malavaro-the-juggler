@@ -32,7 +32,7 @@ switch (state) {
 		percentage += 1/anim_timer;
 		var _position = animcurve_channel_evaluate(collision_anim, percentage);
 		x = malavaro.x;
-		y = start_position[1] + _position * 20;
+		y = start_position[1] + _position * 10;
 	
 		if (percentage >= 1) {
 			state = STATES.THROWING_START;

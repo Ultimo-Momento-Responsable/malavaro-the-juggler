@@ -68,7 +68,14 @@ if (place_meeting(x, y, obj_falling)) {
 			_obj_collision.spd = _obj_collision.speed + (speed / 2);
 			_obj_collision.malavaro = self;
 			_obj_collision.state = STATES.COLLISION;
+			if (place_meeting(x, y, obj_elephant)) {
+				_obj_collision_speed = _obj_collision.hspeed * 1.5;
+			}
+			if (place_meeting(x, y, obj_contortionist)) {
+				_obj_collision_speed = _obj_collision.hspeed;
+			}
 		}
+		
 	}
 }
 // Malavaro hit edge screen
