@@ -9,6 +9,17 @@ if (timer == 0) {
 	gravity = spd_gravity;
 	img_angle_spd = angle_spd;
 }
+
+if (is_iddle) {
+	percentage += 1/120;
+	var _position_x = animcurve_channel_evaluate(curve_x, percentage);
+	var _position_y = animcurve_channel_evaluate(curve_y, percentage);
+	show_debug_message(_position_y, _position_x);
+	x = (start_position[0] + _position_x * 20);
+	y = (start_position[1] + _position_y * 20);
+	if percentage >= 1 percentage = 0;
+}
+
 if (bounces > 0) {
 	if((x - sprite_width) > room_width || (x + sprite_width) < 0) {
 		// Should score

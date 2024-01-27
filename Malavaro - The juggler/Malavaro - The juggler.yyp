@@ -47,6 +47,7 @@
     {"id":{"name":"spr_ball","path":"sprites/spr_ball/spr_ball.yy",},},
     {"id":{"name":"obj_scimitar","path":"objects/obj_scimitar/obj_scimitar.yy",},},
     {"id":{"name":"obj_elephant","path":"objects/obj_elephant/obj_elephant.yy",},},
+    {"id":{"name":"ac_balance_object","path":"animcurves/ac_balance_object/ac_balance_object.yy",},},
     {"id":{"name":"spr_pin","path":"sprites/spr_pin/spr_pin.yy",},},
     {"id":{"name":"spr_malavaro","path":"sprites/spr_malavaro/spr_malavaro.yy",},},
     {"id":{"name":"scr_spawn_object","path":"scripts/scr_spawn_object/scr_spawn_object.yy",},},
