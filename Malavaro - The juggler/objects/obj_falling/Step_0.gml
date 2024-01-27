@@ -3,3 +3,4 @@
 if (y > room_height) {
 	instance_destroy(self);
 }
+image_angle += img_angle_spd;
