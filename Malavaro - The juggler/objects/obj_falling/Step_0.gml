@@ -50,6 +50,17 @@ switch (state) {
 			state = STATES.FALLING;
 		}
 		break;
+	case STATES.GROUND:
+		death_timer--;
+		speed = 0;
+		gravity = 0;
+		y = room_height;
+		img_angle_spd = 0;
+		image_alpha -= (1/death_timer);
+		if (death_timer == 0) {
+			instance_destroy(self);
+		}
+		break;
 }
 
 
@@ -72,10 +83,10 @@ if (bounces > 0) {
 	} 
 }
 
-if((y - sprite_height) > room_height) {
+if((y - sprite_height/2) > room_height && state == STATES.FALLING) {
 	// Should explode
 	obj_game_controller.lives_left --;
-	instance_destroy(self);
+	state = STATES.GROUND;
 }
 	
 image_angle += img_angle_spd;

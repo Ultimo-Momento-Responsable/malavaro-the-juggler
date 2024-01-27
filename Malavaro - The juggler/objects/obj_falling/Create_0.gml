@@ -6,8 +6,9 @@ enum STATES {
 	THROWING_START = 2,
 	THROWING_END = 3,
 	FALLING = 4,
+	GROUND = 5
 }
-
+death_timer = 5 * 60;
 distance_animation = 30;
 state = STATES.IDLE;
 gravity_direction = 270;
