@@ -22,7 +22,7 @@ if (is_idle) {
 		// If player input stop idle
 		is_idle = false;
 		idle_time = 0;
-		idle_countdown = 60;
+		idle_countdown = 15;
 	} else {
 		if (idle_countdown > 0) {
 			idle_countdown --;
@@ -36,7 +36,7 @@ if (is_idle) {
 }
 
 
-// Fricción
+// Friction
 if (abs(speed) > 0) {
 	if (abs(speed) < h_friction) {
 		speed = 0;
@@ -66,6 +66,7 @@ image_angle += calculate_rotation_increment(image_angle, _current_direction);
 if (place_meeting(x, y, obj_falling)) {
 	var _obj_collision = instance_place(x, y, obj_falling);
 	if (_obj_collision) {
+		_obj_collision.bounces ++;
 		_obj_collision.direction = image_angle + 90;
 		_obj_collision.speed += abs(speed/2);
 	}

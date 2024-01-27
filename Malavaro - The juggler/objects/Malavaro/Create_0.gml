@@ -20,11 +20,7 @@ function calculate_speed_increment(_current_speed, _current_direction) {
 	return _abs_current_speed >= max_h_speed ? 0 : _current_direction * h_speed * inertia;
 }
 
-function calculate_rotation_increment(_current_angle, _current_direction) {
-	//if (is_out_of_range(_current_angle)) {
-	//	return 0;
-	//}
-	
+function calculate_rotation_increment(_current_angle, _current_direction) {	
 	var _angle_increment = - _current_direction * angular_speed * angular_inertia;
 	var _next_angle = _current_angle + _angle_increment;
 	
