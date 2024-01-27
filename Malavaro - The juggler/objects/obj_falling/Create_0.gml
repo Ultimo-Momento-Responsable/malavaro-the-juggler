@@ -4,3 +4,4 @@ gravity_direction = 270;
 spd = random_range(5, 25);
 spd_gravity = 0.7;
 img_angle_spd = 0;
+image_speed = 0.2;

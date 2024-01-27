@@ -63,8 +63,10 @@ if (is_not_straight(image_angle)) {
 speed += calculate_speed_increment(speed, _current_direction);
 image_angle += calculate_rotation_increment(image_angle, _current_direction);
 
-var _obj_collision = instance_place(x, y, obj_falling);
-if (_obj_collision) {
-	_obj_collision.direction = image_angle + 60;
-	_obj_collision.speed += abs(speed/2);
+if (place_meeting(x, y, obj_falling)) {
+	var _obj_collision = instance_place(x, y, obj_falling);
+	if (_obj_collision) {
+		_obj_collision.direction = image_angle + 90;
+		_obj_collision.speed += abs(speed/2);
+	}
 }
