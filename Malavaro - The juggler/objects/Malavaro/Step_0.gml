@@ -11,15 +11,6 @@ if (abs(speed) > 0) {
 	}
 }
 
-// Go back to standing straight
-if (is_not_straight(image_angle)) {
-	if (abs(image_angle - 90) < angular_bounce) {
-		image_angle = 90;
-	} else {
-		image_angle += get_tilt(image_angle) * angular_bounce;
-	}
-}
-
 var _current_direction = 0;
 
 if (keyboard_check(vk_right)) {
@@ -29,6 +20,19 @@ if (keyboard_check(vk_right)) {
 if (keyboard_check(vk_left)) {
 	_current_direction = -1;
 }
+
+// Go back to standing straight
+if (is_not_straight(image_angle)) {
+	if (abs(image_angle) < angular_bounce) {
+		image_angle = 0;
+	} else {
+		if (!(_current_direction != 0 && (image_angle == max_angle || image_angle == min_angle))) {
+			image_angle += get_tilt(image_angle) * angular_bounce;
+		}
+	}
+}
+
+
 
 speed += calculate_speed_increment(speed, _current_direction);
 image_angle += calculate_rotation_increment(image_angle, _current_direction);

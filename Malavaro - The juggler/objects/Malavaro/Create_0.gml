@@ -5,8 +5,8 @@ h_friction =  0.8;
 h_speed = 10;
 max_h_speed = 30;
 
-min_angle = -30;
-max_angle = 180 - min_angle;
+min_angle = -60;
+max_angle = -min_angle;
 angular_speed = 20;
 angular_inertia = 0.15;
 angular_bounce = 1;
@@ -17,9 +17,9 @@ function calculate_speed_increment(_current_speed, _current_direction) {
 }
 
 function calculate_rotation_increment(_current_angle, _current_direction) {
-	if (is_out_of_range(_current_angle)) {
-		return 0;
-	}
+	//if (is_out_of_range(_current_angle)) {
+	//	return 0;
+	//}
 	
 	var _angle_increment = - _current_direction * angular_speed * angular_inertia;
 	var _next_angle = _current_angle + _angle_increment;
@@ -32,19 +32,19 @@ function calculate_rotation_increment(_current_angle, _current_direction) {
 }
 
 function is_out_of_range(_angle) {
-	return _angle < min_angle || _angle > max_angle
+	return _angle < min_angle || _angle > max_angle;
 }
 
 function is_not_straight(_angle) {
-	return _angle > 90 || _angle < 90;
+	return _angle > 0 || _angle < 0;
 }
 
 function get_tilt(_angle) {
-	if (_angle < 90) {
+	if (_angle < 0) {
 		return 1;
 	}
 	
-	if (_angle > 90 ) {
+	if (_angle > 0 ) {
 		return -1;
 	}
 	return 0;
