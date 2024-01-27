@@ -65,6 +65,6 @@ image_angle += calculate_rotation_increment(image_angle, _current_direction);
 
 var _obj_collision = instance_place(x, y, obj_falling);
 if (_obj_collision) {
-	_obj_collision.direction = image_angle;
-	_obj_collision.speed += speed;
+	_obj_collision.direction = image_angle + 60;
+	_obj_collision.speed += abs(speed/2);
 }

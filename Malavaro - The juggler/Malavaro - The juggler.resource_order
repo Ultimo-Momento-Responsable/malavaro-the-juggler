@@ -24,9 +24,12 @@
     {"name":"obj_pin","order":4,"path":"objects/obj_pin/obj_pin.yy",},
     {"name":"obj_falling","order":2,"path":"objects/obj_falling/obj_falling.yy",},
     {"name":"spr_scimitar","order":3,"path":"sprites/spr_scimitar/spr_scimitar.yy",},
+    {"name":"spr_ball","order":4,"path":"sprites/spr_ball/spr_ball.yy",},
     {"name":"obj_scimitar","order":5,"path":"objects/obj_scimitar/obj_scimitar.yy",},
     {"name":"obj_elephant","order":1,"path":"objects/obj_elephant/obj_elephant.yy",},
     {"name":"spr_pin","order":2,"path":"sprites/spr_pin/spr_pin.yy",},
     {"name":"spr_malavaro","order":1,"path":"sprites/spr_malavaro/spr_malavaro.yy",},
+    {"name":"obj_ball","order":6,"path":"objects/obj_ball/obj_ball.yy",},
+    {"name":"Sprite6","order":16,"path":"sprites/Sprite6/Sprite6.yy",},
   ],
 }
