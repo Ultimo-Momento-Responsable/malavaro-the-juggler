@@ -18,8 +18,8 @@ switch (state) {
 		var _position_x = animcurve_channel_evaluate(idle_anim_x, percentage);
 		var _position_y = animcurve_channel_evaluate(idle_anim_y, percentage);
 		if position == 0 image_xscale = -1;
-		x = (start_position[0] + _position_x * 20);
-		y = (start_position[1] + _position_y * 20);
+		x = (start_position[0] + _position_x * (distance_animation - 10));
+		y = (start_position[1] + _position_y * (distance_animation - 15));
 		if percentage >= 1 percentage = 0;
 		break;
 	case STATES.FALLING:

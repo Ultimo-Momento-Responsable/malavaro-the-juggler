@@ -5,6 +5,6 @@ img_angle_spd = 0;
 angle_spd = 12;
 spd_gravity = 0.6;
 score_points = 250;
-
+distance_animation = 50;
 
 

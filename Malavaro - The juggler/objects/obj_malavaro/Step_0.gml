@@ -75,9 +75,9 @@ if (place_meeting(x, y, obj_falling)) {
 				_obj_collision_speed = _obj_collision.hspeed;
 			}
 		}
-		
 	}
 }
+
 // Malavaro hit edge screen
 if (x <= sprite_width/2 || x >= room_width - sprite_width/2) {
 	speed = 0;
