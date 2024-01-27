@@ -30,6 +30,5 @@
     {"name":"spr_pin","order":2,"path":"sprites/spr_pin/spr_pin.yy",},
     {"name":"spr_malavaro","order":1,"path":"sprites/spr_malavaro/spr_malavaro.yy",},
     {"name":"obj_ball","order":6,"path":"objects/obj_ball/obj_ball.yy",},
-    {"name":"Sprite6","order":16,"path":"sprites/Sprite6/Sprite6.yy",},
   ],
 }
