@@ -1,5 +1,13 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
+enum STATES {
+	IDLE = 0,
+	COLLISION = 1,
+	THROWING_START = 2,
+	THROWING_END = 3,
+	FALLING = 4,
+}
+state = STATES.IDLE;
 gravity_direction = 270;
 depth = -2
 spd = random_range(5, 20);
@@ -23,3 +31,4 @@ anim_timer = 10;
 in_collision = false;
 img_angle_in_collision = 0;
 malavaro = instance_find(obj_malavaro,1);
+throwing_timer = 30;

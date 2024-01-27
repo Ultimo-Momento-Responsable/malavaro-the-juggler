@@ -15,9 +15,11 @@ depth = 1;
 is_idle = true;
 idle_time = 0;
 idle_countdown = 0;
-function calculate_speed_increment(_current_speed, _current_direction) {
+
+function calculate_speed_increment(_current_speed, _current_direction, _obj_speed = 0) {
 	var _abs_current_speed = abs(_current_speed)
-	return _abs_current_speed >= max_h_speed ? 0 : _current_direction * h_speed * inertia;
+	var _delta_speed = _abs_current_speed >= max_h_speed ? 0 : _current_direction * h_speed * inertia;
+	return _delta_speed + _obj_speed;
 }
 
 function calculate_rotation_increment(_current_angle, _current_direction) {	
@@ -52,7 +54,7 @@ function get_tilt(_angle) {
 
 
 function change_direction_on_collision(_speed) {
-	var _old_direction = direction;
+	
 	hspeed = _speed;
 	return hspeed < 0 ? -1 : 1;
 }

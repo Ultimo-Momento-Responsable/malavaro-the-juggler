@@ -58,31 +58,24 @@ if (is_not_straight(image_angle)) {
 	}
 }
 
-
-
-speed += calculate_speed_increment(speed, _current_direction);
-image_angle += calculate_rotation_increment(image_angle, _current_direction);
+var _obj_collision_speed = 0;
 
 if (place_meeting(x, y, obj_falling)) {
 	var _obj_collision = instance_place(x, y, obj_falling);
 	if (_obj_collision) {
-		if (_obj_collision.percentage == 0) {
-			_obj_collision.in_collision = true;
-			_obj_collision.malavaro = self;
+		if (_obj_collision.state == STATES.FALLING) {
 			_obj_collision.img_angle_in_collision = image_angle + 90;
 			_obj_collision.spd = _obj_collision.speed + (speed / 2);
-			if (instance_place(x, y, obj_elephant)) {
-				_current_direction = change_direction_on_collision(_obj_collision.hspeed);
-			}
-			if (instance_place(x, y, obj_contortionist)) {
-				_current_direction = change_direction_on_collision(_obj_collision.hspeed / 2);
-			}
+			_obj_collision.malavaro = self;
+			_obj_collision.state = STATES.COLLISION;
 		}
 	}
 }
-
 // Malavaro hit edge screen
 if (x <= sprite_width/2 || x >= room_width - sprite_width/2) {
 	speed = 0;
 	x = x <= sprite_width/2 ? sprite_width/2 + 1 : room_width - sprite_width/2 - 1;
 }
+
+speed += calculate_speed_increment(speed, _current_direction, _obj_collision_speed);
+image_angle += calculate_rotation_increment(image_angle, _current_direction);
