@@ -2,9 +2,9 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_malavaro_lives",
-  "bbox_bottom": 43,
+  "bbox_bottom": 19,
   "bbox_left": 0,
-  "bbox_right": 43,
+  "bbox_right": 19,
   "bbox_top": 1,
   "bboxMode": 0,
   "collisionKind": 1,
@@ -17,7 +17,7 @@
   ],
   "gridX": 0,
   "gridY": 0,
-  "height": 45,
+  "height": 20,
   "HTile": false,
   "layers": [
     {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"f60a25cf-1477-4828-ba03-8fe70fad90c5","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
@@ -70,5 +70,5 @@
   },
   "type": 0,
   "VTile": false,
-  "width": 45,
+  "width": 20,
 }
