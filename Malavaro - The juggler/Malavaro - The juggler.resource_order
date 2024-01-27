@@ -18,5 +18,12 @@
   ],
   "ResourceOrderSettings": [
     {"name":"Sprite1","order":1,"path":"sprites/Sprite1/Sprite1.yy",},
+    {"name":"GameController","order":2,"path":"objects/GameController/GameController.yy",},
+    {"name":"Sprite3","order":7,"path":"sprites/Sprite3/Sprite3.yy",},
+    {"name":"Sprite4","order":8,"path":"sprites/Sprite4/Sprite4.yy",},
+    {"name":"Sprite2","order":6,"path":"sprites/Sprite2/Sprite2.yy",},
+    {"name":"obj_scimitar","order":3,"path":"objects/obj_scimitar/obj_scimitar.yy",},
+    {"name":"obj_elephant","order":4,"path":"objects/obj_elephant/obj_elephant.yy",},
+    {"name":"obj_contortionist","order":5,"path":"objects/obj_contortionist/obj_contortionist.yy",},
   ],
 }

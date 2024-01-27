@@ -9,7 +9,7 @@
     "children": [],
     "name": "Default",
   },
-  "defaultScriptType": 0,
+  "defaultScriptType": 1,
   "Folders": [
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Conjuntos de casillas","folderPath":"folders/Conjuntos de casillas.yy",},
     {"resourceType":"GMFolder","resourceVersion":"1.0","name":"Curvas de animación","folderPath":"folders/Curvas de animación.yy",},
@@ -35,7 +35,15 @@
   },
   "resources": [
     {"id":{"name":"Sprite1","path":"sprites/Sprite1/Sprite1.yy",},},
-    {"id":{"name":"FallingObject","path":"objects/FallingObject/FallingObject.yy",},},
+    {"id":{"name":"GameController","path":"objects/GameController/GameController.yy",},},
+    {"id":{"name":"Sprite3","path":"sprites/Sprite3/Sprite3.yy",},},
+    {"id":{"name":"obj_falling","path":"objects/obj_falling/obj_falling.yy",},},
+    {"id":{"name":"Sprite4","path":"sprites/Sprite4/Sprite4.yy",},},
+    {"id":{"name":"Sprite2","path":"sprites/Sprite2/Sprite2.yy",},},
+    {"id":{"name":"obj_scimitar","path":"objects/obj_scimitar/obj_scimitar.yy",},},
+    {"id":{"name":"obj_elephant","path":"objects/obj_elephant/obj_elephant.yy",},},
+    {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
+    {"id":{"name":"obj_contortionist","path":"objects/obj_contortionist/obj_contortionist.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
   "RoomOrderNodes": [

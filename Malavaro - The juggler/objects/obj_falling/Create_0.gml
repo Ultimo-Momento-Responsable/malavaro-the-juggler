@@ -1,6 +1,5 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
-gravity = 9.8;
 gravity_direction = 270;
-direction = 180;
-speed = 10;
+speed = random_range(5, 25);
+gravity = 0.7;
