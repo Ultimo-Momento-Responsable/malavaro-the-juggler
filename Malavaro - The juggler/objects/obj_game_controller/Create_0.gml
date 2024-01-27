@@ -18,3 +18,7 @@ left_object = instance_create_depth(sprites_offset, sprites_offset, sprite_depth
 left_object.position = 0;
 left_object.image_xscale = -1;
 left_object.angle_spd *= -1;
+
+animation_speed = 0.2;
+animation_timer = 1 / animation_speed;
+spr_score_frame = 0;
