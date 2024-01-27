@@ -34,7 +34,7 @@
     "IDEVersion": "2023.11.1.129",
   },
   "resources": [
-    {"id":{"name":"obj_gameController","path":"objects/obj_gameController/obj_gameController.yy",},},
+    {"id":{"name":"obj_game_controller","path":"objects/obj_game_controller/obj_game_controller.yy",},},
     {"id":{"name":"spr_elephant","path":"sprites/spr_elephant/spr_elephant.yy",},},
     {"id":{"name":"obj_pin","path":"objects/obj_pin/obj_pin.yy",},},
     {"id":{"name":"obj_falling","path":"objects/obj_falling/obj_falling.yy",},},
@@ -43,7 +43,7 @@
     {"id":{"name":"obj_scimitar","path":"objects/obj_scimitar/obj_scimitar.yy",},},
     {"id":{"name":"obj_elephant","path":"objects/obj_elephant/obj_elephant.yy",},},
     {"id":{"name":"spr_pin","path":"sprites/spr_pin/spr_pin.yy",},},
-    {"id":{"name":"Script1","path":"scripts/Script1/Script1.yy",},},
+    {"id":{"name":"scr_spawn_object","path":"scripts/scr_spawn_object/scr_spawn_object.yy",},},
     {"id":{"name":"obj_contortionist","path":"objects/obj_contortionist/obj_contortionist.yy",},},
     {"id":{"name":"Room1","path":"rooms/Room1/Room1.yy",},},
   ],
