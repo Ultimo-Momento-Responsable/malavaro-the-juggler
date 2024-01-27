@@ -15,5 +15,6 @@ function set_object_initial_values(_obj, _initial_angle) {
 	_obj.speed = _obj.spd;
 	_obj.gravity = _obj.spd_gravity;
 	_obj.img_angle_spd = _obj.angle_spd;
+	_obj.is_active = true;
 }
 
