@@ -34,7 +34,7 @@
     "IDEVersion": "2023.11.1.129",
   },
   "resources": [
-    {"id":{"name":"GameController","path":"objects/GameController/GameController.yy",},},
+    {"id":{"name":"obj_gameController","path":"objects/obj_gameController/obj_gameController.yy",},},
     {"id":{"name":"spr_elephant","path":"sprites/spr_elephant/spr_elephant.yy",},},
     {"id":{"name":"obj_pin","path":"objects/obj_pin/obj_pin.yy",},},
     {"id":{"name":"obj_falling","path":"objects/obj_falling/obj_falling.yy",},},
