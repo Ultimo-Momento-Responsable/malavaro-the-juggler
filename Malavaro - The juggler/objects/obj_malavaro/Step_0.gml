@@ -83,7 +83,7 @@ if (place_meeting(x, y, obj_falling)) {
 					_obj_collision.spd = _obj_collision.speed * 4;
 					audio_play_sound(throw_sounds[irandom(array_length(throw_sounds)-1)], 1, false);
 				} else {
-					_obj_collision.spd = obj_collision.speed + (speed / 2);
+					_obj_collision.spd = _obj_collision.speed + (speed / 2);
 				}
 				_obj_collision.malavaro = self;
 				_obj_collision.state = STATES.COLLISION;
@@ -95,7 +95,7 @@ if (place_meeting(x, y, obj_falling)) {
 				}
 			} else {
 				power_up_timer = 60 * power_up_seconds;
-				audio_play_sound(snd_haha, 1, false, 1);
+				audio_play_sound(snd_malavaro_power_up, 1, false, 1);
 				instance_destroy(_obj_collision);
 			}
 			

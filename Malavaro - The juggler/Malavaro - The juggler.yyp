@@ -54,6 +54,7 @@
     {"id":{"name":"spr_background_final_screen","path":"sprites/spr_background_final_screen/spr_background_final_screen.yy",},},
     {"id":{"name":"spr_lives","path":"sprites/spr_lives/spr_lives.yy",},},
     {"id":{"name":"snd_acrobat_fall","path":"sounds/snd_acrobat_fall/snd_acrobat_fall.yy",},},
+    {"id":{"name":"snd_malavaro_power_up","path":"sounds/snd_malavaro_power_up/snd_malavaro_power_up.yy",},},
     {"id":{"name":"obj_juggler_arms","path":"objects/obj_juggler_arms/obj_juggler_arms.yy",},},
     {"id":{"name":"obj_torch","path":"objects/obj_torch/obj_torch.yy",},},
     {"id":{"name":"snd_boo","path":"sounds/snd_boo/snd_boo.yy",},},

@@ -32,6 +32,7 @@
     {"name":"spr_background_final_screen","order":1,"path":"sprites/spr_background_final_screen/spr_background_final_screen.yy",},
     {"name":"spr_lives","order":10,"path":"sprites/spr_lives/spr_lives.yy",},
     {"name":"snd_acrobat_fall","order":1,"path":"sounds/snd_acrobat_fall/snd_acrobat_fall.yy",},
+    {"name":"snd_malavaro_power_up","order":12,"path":"sounds/snd_malavaro_power_up/snd_malavaro_power_up.yy",},
     {"name":"obj_juggler_arms","order":5,"path":"objects/obj_juggler_arms/obj_juggler_arms.yy",},
     {"name":"obj_torch","order":7,"path":"objects/obj_torch/obj_torch.yy",},
     {"name":"snd_boo","order":4,"path":"sounds/snd_boo/snd_boo.yy",},
