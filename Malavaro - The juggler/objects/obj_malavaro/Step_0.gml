@@ -81,7 +81,7 @@ if (place_meeting(x, y, obj_falling)) {
 				_obj_collision.img_angle_in_collision = image_angle + 90;
 				if (power_up_timer > 0) {
 					_obj_collision.spd = _obj_collision.speed * 4;
-					
+					audio_play_sound(throw_sounds[irandom(array_length(throw_sounds)-1)], 1, false);
 				} else {
 					_obj_collision.spd = obj_collision.speed + (speed / 2);
 				}

@@ -18,6 +18,8 @@ idle_countdown = 0;
 power_up_timer = 0;
 power_up_seconds = 10;
 
+throw_sounds = [snd_malavaro_throw_objects_power_up_1, snd_malavaro_throw_objects_power_up_2, snd_malavaro_throw_objects_power_up_3]
+
 // Animation stuff
 active_sequence = -1;
 sequence_layers = layer_create(depth);
