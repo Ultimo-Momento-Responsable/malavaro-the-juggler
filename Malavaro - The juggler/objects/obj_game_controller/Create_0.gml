@@ -9,6 +9,7 @@ score_points = 0;
 lives_left = 5;
 has_throw_left = false;
 has_throw_right = false;
+global.score_points = 0;
 
 objects = [obj_contortionist, obj_elephant, obj_scimitar, obj_pin, obj_ball, obj_torch];
 right_object = instance_create_depth(room_width - 110, 107, sprite_depth, objects[irandom(array_length(objects) - 1)]);	

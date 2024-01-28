@@ -26,6 +26,7 @@ if (lives_left < 0) {
 		audio_play_sound(snd_boo, 1, false);
 		played_game_over_sound = true;
 	}
+	room_goto_next();
 }
 
 if keyboard_check_pressed(vk_enter) {

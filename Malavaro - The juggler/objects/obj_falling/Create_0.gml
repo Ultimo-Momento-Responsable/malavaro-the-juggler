@@ -18,7 +18,6 @@ spd = random_range(5, 20);
 spd_gravity = 0.7;
 img_angle_spd = 0;
 image_speed = 0.2;
-score_points = 100;
 bounces = 0;
 idle_anim_y = animcurve_get_channel(ac_balance_object, "curveY");
 idle_anim_x = animcurve_get_channel(ac_balance_object, "curveX");

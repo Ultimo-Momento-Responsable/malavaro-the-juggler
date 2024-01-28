@@ -86,7 +86,7 @@ if (bounces > 0) {
 	if(!has_scored && ((x - abs(sprite_width)) > room_width || (x + abs(sprite_width)) < 0)) {
 		// Should score
 		has_scored = true;
-		obj_game_controller.score_points += score_points * power(2, bounces - 1);
+		global.score_points += score_points * power(2, bounces - 1);
 		instance_destroy(self);
 	} 
 }
