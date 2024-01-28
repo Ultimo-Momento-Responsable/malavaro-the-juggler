@@ -3,8 +3,8 @@
 timer --;
 
 if (timer == 0) {
-	var _initial_angle = position == 0 ? 30 : 120;
-	direction = random_range(_initial_angle, _initial_angle + 50);
+	var _initial_angle = position == 0 ? 45 : 115;
+	direction = random_range(_initial_angle, _initial_angle + 35);
 	speed = spd;
 	gravity = spd_gravity;
 	img_angle_spd = angle_spd;
@@ -54,11 +54,16 @@ switch (state) {
 		break;
 	case STATES.GROUND:
 		death_timer--;
-		speed = 0;
-		gravity = 0;
+		if (abs(hspeed) < (20 / death_timer)) {
+			hspeed = 0;
+			img_angle_spd = 0;
+		} else {
+			hspeed += (hspeed > 0 ? -0.2 : 0.2);
+			img_angle_spd = (image_angle > 0 ? 1 - (5/death_timer) : -1 - (5/death_timer));
+		}
+			
+		image_alpha -= (1 / death_timer);
 		y = room_height;
-		img_angle_spd = 0;
-		image_alpha -= (1/death_timer);
 		if (death_timer == 0) {
 			instance_destroy(self);
 		}
@@ -72,25 +77,32 @@ if (bounces > 0) {
 		audio_play_sound_at(snd_haha, malavaro.x, malavaro.y, 0, 100, 300, 1, false, 1);
 		obj_game_controller.lives_left ++;
 		has_gained_life = true;
+		obj_game_controller.life_bonus = true;
 	}
 	
 	if (has_gained_life && bounces % 3 != 0) {
 		has_gained_life = false;
 	}
 	
-	if(!has_scored && ((x - abs(sprite_width)) > room_width || (x + abs(sprite_width)) < 0)) {
+	if(!has_scored && ((x - abs(sprite_width / 1.2)) > room_width || (x + abs(sprite_width / 1.2)) < 0)) {
 		// Should score
 		has_scored = true;
-		obj_game_controller.score_points += score_points * power(2, bounces - 1);
+		global.score_points += score_points * power(2, bounces - 1);
 		instance_destroy(self);
 	} 
+} else {
+	if ((x - abs(sprite_width / 1.2)) > room_width || (x + abs(sprite_width / 1.2)) < 0) {
+		instance_destroy(self);
+	}
 }
+	
 
 if((y - sprite_height/2) > room_height && state == STATES.FALLING) {
 	// Should explode
 	audio_play_sound_at(fall_sound, x, y, 0, 100, 300, 1, false, 1);
 	obj_game_controller.lives_left --;
 	state = STATES.GROUND;
+	gravity = 0;
 }
 	
 image_angle += img_angle_spd;

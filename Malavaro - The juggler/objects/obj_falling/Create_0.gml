@@ -9,15 +9,15 @@ enum STATES {
 	GROUND = 5
 }
 death_timer = 5 * 60;
+ground_x = x;
 distance_animation = 30;
 state = STATES.IDLE;
 gravity_direction = 270;
 depth = -2
-spd = random_range(5, 20);
+spd = random_range(7, 18);
 spd_gravity = 0.7;
 img_angle_spd = 0;
 image_speed = 0.2;
-score_points = 100;
 bounces = 0;
 idle_anim_y = animcurve_get_channel(ac_balance_object, "curveY");
 idle_anim_x = animcurve_get_channel(ac_balance_object, "curveX");
