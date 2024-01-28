@@ -70,11 +70,8 @@
     {"id":{"name":"spr_left_juggler","path":"sprites/spr_left_juggler/spr_left_juggler.yy",},},
     {"id":{"name":"spr_score","path":"sprites/spr_score/spr_score.yy",},},
     {"id":{"name":"obj_falling","path":"objects/obj_falling/obj_falling.yy",},},
-<<<<<<< Updated upstream
     {"id":{"name":"rm_title_screen","path":"rooms/rm_title_screen/rm_title_screen.yy",},},
-=======
     {"id":{"name":"snd_malavaro_throw_objects_power_up_1","path":"sounds/snd_malavaro_throw_objects_power_up_1/snd_malavaro_throw_objects_power_up_1.yy",},},
->>>>>>> Stashed changes
     {"id":{"name":"snd_ohh3","path":"sounds/snd_ohh3/snd_ohh3.yy",},},
     {"id":{"name":"spr_malavaro_idle","path":"sprites/spr_malavaro_idle/spr_malavaro_idle.yy",},},
     {"id":{"name":"spr_contortionist2","path":"sprites/spr_contortionist2/spr_contortionist2.yy",},},
