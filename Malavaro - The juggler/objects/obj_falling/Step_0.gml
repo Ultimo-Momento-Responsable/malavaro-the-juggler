@@ -63,7 +63,16 @@ switch (state) {
 		}
 			
 		image_alpha -= (1 / death_timer);
-		y = room_height;
+		if (sprite_index == spr_elephant) {
+			y = room_height;
+		} else {
+			if (sprite_index == spr_scimitar || sprite_index == spr_torch) {
+				y = room_height - sprite_height / 2;
+			} else {
+				y = room_height - sprite_height;
+			}
+		}
+		
 		if (death_timer == 0) {
 			instance_destroy(self);
 		}
@@ -97,7 +106,7 @@ if (bounces > 0) {
 }
 	
 
-if((y - sprite_height/2) > room_height && state == STATES.FALLING) {
+if((y) > room_height && state == STATES.FALLING) {
 	// Should explode
 	if (!power_up) {
 		audio_play_sound_at(fall_sound, x, y, 0, 100, 300, 1, false, 1);
