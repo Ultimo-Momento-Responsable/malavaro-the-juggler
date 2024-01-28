@@ -21,6 +21,11 @@ if (lives_left < 0) {
 	instance_destroy(right_object);
 	instance_destroy(left_object);
 	instance_destroy(obj_malavaro);
+	audio_stop_sound(snd_music);
+	if (!played_game_over_sound) {
+		audio_play_sound(snd_boo, 1, false);
+		played_game_over_sound = true;
+	}
 }
 
 if keyboard_check_pressed(vk_enter) {

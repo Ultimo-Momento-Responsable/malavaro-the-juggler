@@ -35,3 +35,7 @@ in_collision = false;
 img_angle_in_collision = 0;
 malavaro = instance_find(obj_malavaro,1);
 throwing_timer = 30;
+
+fall_sound = snd_acrobat;
+throw_sound = snd_acrobat_fall;
+swing_sound = [snd_swing0, snd_swing1];

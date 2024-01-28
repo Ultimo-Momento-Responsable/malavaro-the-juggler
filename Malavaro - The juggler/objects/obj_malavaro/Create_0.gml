@@ -16,6 +16,9 @@ is_idle = true;
 idle_time = 0;
 idle_countdown = 0;
 
+audio_listener_position(room_width / 2, room_height, 0);
+audio_listener_orientation(room_width / 2, 0, 0, 0, 1, 0);
+
 function calculate_speed_increment(_current_speed, _current_direction, _obj_speed = 0) {
 	var _abs_current_speed = abs(_current_speed)
 	var _delta_speed = _abs_current_speed >= max_h_speed ? 0 : _current_direction * h_speed * inertia;

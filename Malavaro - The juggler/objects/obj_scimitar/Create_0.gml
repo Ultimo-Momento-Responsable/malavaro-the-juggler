@@ -6,3 +6,6 @@ angle_spd = 15;
 spd_gravity = 0.5;
 score_points = 250;
 distance_animation = 50;
+
+throw_sound = snd_scimitar;
+fall_sound = snd_scimitar_fall;

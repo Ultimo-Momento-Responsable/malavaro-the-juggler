@@ -7,3 +7,5 @@ score_points = 500;
 distance_animation = 50;
 spd_gravity = 0.5;
 
+throw_sound = snd_ball;
+fall_sound = snd_ball_fall;

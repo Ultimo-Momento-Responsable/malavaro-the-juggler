@@ -7,4 +7,5 @@ spd_gravity = 0.6;
 score_points = 250;
 distance_animation = 50;
 
-
+throw_sound = snd_pin;
+fall_sound = snd_pin_fall;

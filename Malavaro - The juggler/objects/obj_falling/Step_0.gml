@@ -9,7 +9,8 @@ if (timer == 0) {
 	gravity = spd_gravity;
 	img_angle_spd = angle_spd;
 	if position == 0 image_xscale = -1;
-	state = STATES.FALLING
+	state = STATES.FALLING;
+	audio_play_sound_at(throw_sound, start_position[0], start_position[1], 0, 100, 300, 1, false, 1);
 }
 
 switch (state) {
@@ -42,6 +43,7 @@ switch (state) {
 		bounces ++;
 		direction = img_angle_in_collision;
 		speed = spd;
+		audio_play_sound_at(swing_sound[irandom_range(0, 1)], start_position[0], start_position[1], 0, 100, 300, 1, false, 1);
 		state = STATES.THROWING_END;
 		break;
 	case STATES.THROWING_END: 
@@ -67,6 +69,7 @@ switch (state) {
 if (bounces > 0) {
 	if(!has_gained_life && bounces % 3 == 0) {
 		// If has juggled object 3, 6, 9, 12, etc, gain a life
+		audio_play_sound_at(snd_haha, malavaro.x, malavaro.y, 0, 100, 300, 1, false, 1);
 		obj_game_controller.lives_left ++;
 		has_gained_life = true;
 	}
@@ -85,6 +88,7 @@ if (bounces > 0) {
 
 if((y - sprite_height/2) > room_height && state == STATES.FALLING) {
 	// Should explode
+	audio_play_sound_at(fall_sound, x, y, 0, 100, 300, 1, false, 1);
 	obj_game_controller.lives_left --;
 	state = STATES.GROUND;
 }
