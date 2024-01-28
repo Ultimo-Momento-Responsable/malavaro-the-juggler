@@ -3,6 +3,8 @@ if (active_sequence != -1) {
 	juggling_timer --;
 	layer_sequence_x(active_sequence, x);
 	layer_sequence_y(active_sequence, y);
+	layer_sequence_xscale(active_sequence, image_xscale);
+	layer_sequence_yscale(active_sequence, image_yscale);
 	layer_sequence_angle(active_sequence, image_angle);
 	
 	if (juggling_timer == 0) {
@@ -77,7 +79,7 @@ if (place_meeting(x, y, obj_falling)) {
 		if (_obj_collision.state == STATES.FALLING) {
 			if (!_obj_collision.power_up) {
 				_obj_collision.img_angle_in_collision = image_angle + 90;
-				_obj_collision.spd = power_up_timer > 0 ? _obj_collision.speed * 10 :_obj_collision.speed + (speed / 2);
+				_obj_collision.spd = power_up_timer > 0 ? _obj_collision.speed * 4 :_obj_collision.speed + (speed / 2);
 				_obj_collision.malavaro = self;
 				_obj_collision.state = STATES.COLLISION;
 				if (place_meeting(x, y, obj_elephant)) {
@@ -112,7 +114,7 @@ if (power_up_timer > 0) {
 	}
 	if (power_up_timer < 30) {
 		image_xscale -= 0.02;
-		image_yscale += 0.02;
+		image_yscale -= 0.02;
 	}
 	power_up_timer--;
 } else {

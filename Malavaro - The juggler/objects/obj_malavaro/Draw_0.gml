@@ -1,5 +1,5 @@
 /// @description Inserte aquí la descripción
-// Puede escribir su código en este editor
+// Puede escribir su código en este 
 
 var _surface_drop_shadow = surface_create(room_width, room_height);
 surface_set_target(_surface_drop_shadow);
