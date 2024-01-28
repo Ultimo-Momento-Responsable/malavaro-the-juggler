@@ -28,6 +28,7 @@ animation_speed = 0.2;
 animation_timer = 1 / animation_speed;
 spr_score_frame = 0;
 
+audio_stop_all();
 audio_play_sound(snd_music, 0, true);
 played_game_over_sound = false;
 

@@ -48,6 +48,7 @@
     {"id":{"name":"spr_torch","path":"sprites/spr_torch/spr_torch.yy",},},
     {"id":{"name":"spr_game_over","path":"sprites/spr_game_over/spr_game_over.yy",},},
     {"id":{"name":"spr_malavaro_right_hand","path":"sprites/spr_malavaro_right_hand/spr_malavaro_right_hand.yy",},},
+    {"id":{"name":"snd_title_screen","path":"sounds/snd_title_screen/snd_title_screen.yy",},},
     {"id":{"name":"snd_pin_fall","path":"sounds/snd_pin_fall/snd_pin_fall.yy",},},
     {"id":{"name":"fnt_score","path":"fonts/fnt_score/fnt_score.yy",},},
     {"id":{"name":"snd_swing1","path":"sounds/snd_swing1/snd_swing1.yy",},},
