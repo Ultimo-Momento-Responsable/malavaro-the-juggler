@@ -22,7 +22,7 @@ if (lives_left >= 0) {
 	var _spr_score_height = 38;
 	
 	
-	draw_sprite(spr_score, spr_score_frame, room_width - _padding - _h_padding - _spr_score_width + 10, _padding + 10);
+	draw_sprite(spr_score, spr_score_frame, room_width - _padding - _h_padding - _spr_score_width, _padding);
 	
 	
 	draw_set_halign(fa_right);
@@ -49,4 +49,5 @@ if (lives_left >= 0) {
 		draw_sprite(spr_malavaro_lives, spr_score_frame, _padding * 2 + _h_padding + 10, _padding + _spr_score_height / 2);
 	}
 }
+
 

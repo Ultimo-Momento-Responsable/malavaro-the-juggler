@@ -3,8 +3,8 @@
 timer --;
 
 if (timer == 0) {
-	var _initial_angle = position == 0 ? 30 : 120;
-	direction = random_range(_initial_angle, _initial_angle + 50);
+	var _initial_angle = position == 0 ? 45 : 115;
+	direction = random_range(_initial_angle, _initial_angle + 35);
 	speed = spd;
 	gravity = spd_gravity;
 	img_angle_spd = angle_spd;
@@ -84,13 +84,18 @@ if (bounces > 0) {
 		has_gained_life = false;
 	}
 	
-	if(!has_scored && ((x - abs(sprite_width)) > room_width || (x + abs(sprite_width)) < 0)) {
+	if(!has_scored && ((x - abs(sprite_width / 1.2)) > room_width || (x + abs(sprite_width / 1.2)) < 0)) {
 		// Should score
 		has_scored = true;
 		global.score_points += score_points * power(2, bounces - 1);
 		instance_destroy(self);
 	} 
+} else {
+	if ((x - abs(sprite_width / 1.2)) > room_width || (x + abs(sprite_width / 1.2)) < 0) {
+		instance_destroy(self);
+	}
 }
+	
 
 if((y - sprite_height/2) > room_height && state == STATES.FALLING) {
 	// Should explode

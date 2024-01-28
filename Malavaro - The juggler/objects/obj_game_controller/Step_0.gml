@@ -1,10 +1,6 @@
 /// @description Inserte aquí la descripción
 // Puede escribir su código en este editor
-//timer++;
-//if (timer > spawn_time) {
-//	spawn_time = spawn_object();
-//	timer = 0;
-//}
+
 if (!instance_exists(left_object) || left_object.state == STATES.GROUND) {
 	left_object = instance_create_depth(94, 107, sprite_depth, objects[irandom(array_length(objects) - 1)]);
 	left_object.position = 0;
