@@ -35,9 +35,6 @@ if (lives_left < 0) {
 	room_goto(rm_final_screen);
 }
 
-if keyboard_check_pressed(vk_enter) {
-	game_restart();
-}
 
 if (global.score_points >= 1000 * counter_ohh) {
 	audio_play_sound(ohh_sounds[irandom(array_length(ohh_sounds) - 1)], 1, false, 0.6);
