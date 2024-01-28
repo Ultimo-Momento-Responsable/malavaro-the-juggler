@@ -15,6 +15,8 @@ depth = 1;
 is_idle = true;
 idle_time = 0;
 idle_countdown = 0;
+power_up_timer = 0;
+power_up_seconds = 5;
 
 // Animation stuff
 active_sequence = -1;

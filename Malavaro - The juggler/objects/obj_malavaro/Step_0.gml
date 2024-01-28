@@ -75,15 +75,21 @@ if (place_meeting(x, y, obj_falling)) {
 	var _obj_collision = instance_place(x, y, obj_falling);
 	if (_obj_collision) {
 		if (_obj_collision.state == STATES.FALLING) {
-			_obj_collision.img_angle_in_collision = image_angle + 90;
-			_obj_collision.spd = _obj_collision.speed + (speed / 2);
-			_obj_collision.malavaro = self;
-			_obj_collision.state = STATES.COLLISION;
-			if (place_meeting(x, y, obj_elephant)) {
-				_obj_collision_speed = _obj_collision.hspeed * 1.5;
-			}
-			if (place_meeting(x, y, obj_contortionist)) {
-				_obj_collision_speed = _obj_collision.hspeed;
+			if (!_obj_collision.power_up) {
+				_obj_collision.img_angle_in_collision = image_angle + 90;
+				_obj_collision.spd = power_up_timer > 0 ? _obj_collision.speed * 10 :_obj_collision.speed + (speed / 2);
+				_obj_collision.malavaro = self;
+				_obj_collision.state = STATES.COLLISION;
+				if (place_meeting(x, y, obj_elephant)) {
+					_obj_collision_speed = _obj_collision.hspeed * 1.5;
+				}
+				if (place_meeting(x, y, obj_contortionist)) {
+					_obj_collision_speed = _obj_collision.hspeed;
+				}
+			} else {
+				power_up_timer = 60 * power_up_seconds;
+				audio_play_sound(snd_haha, 1, false, 1);
+				instance_destroy(_obj_collision);
 			}
 			
 			// Juggling animation stuff
@@ -97,6 +103,21 @@ if (place_meeting(x, y, obj_falling)) {
 			} 
 		}
 	}
+}
+
+if (power_up_timer > 0) {
+	if (power_up_timer > 60 * (power_up_seconds - 1)) {
+		image_xscale += 0.01;
+		image_yscale += 0.01;
+	}
+	if (power_up_timer < 30) {
+		image_xscale -= 0.02;
+		image_yscale += 0.02;
+	}
+	power_up_timer--;
+} else {
+	image_xscale = 1;
+	image_yscale = 1;
 }
 
 // Malavaro hit edge screen

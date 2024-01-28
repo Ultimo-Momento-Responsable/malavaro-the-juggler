@@ -99,8 +99,10 @@ if (bounces > 0) {
 
 if((y - sprite_height/2) > room_height && state == STATES.FALLING) {
 	// Should explode
-	audio_play_sound_at(fall_sound, x, y, 0, 100, 300, 1, false, 1);
-	obj_game_controller.lives_left --;
+	if (!power_up) {
+		audio_play_sound_at(fall_sound, x, y, 0, 100, 300, 1, false, 1);
+		obj_game_controller.lives_left --;	
+	}
 	state = STATES.GROUND;
 	gravity = 0;
 }

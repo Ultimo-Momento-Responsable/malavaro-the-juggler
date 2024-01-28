@@ -8,6 +8,7 @@ enum STATES {
 	FALLING = 4,
 	GROUND = 5
 }
+power_up = false;
 death_timer = 5 * 60;
 ground_x = x;
 distance_animation = 30;
