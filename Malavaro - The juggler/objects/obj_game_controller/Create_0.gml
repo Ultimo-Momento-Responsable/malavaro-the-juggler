@@ -11,6 +11,11 @@ has_throw_left = false;
 has_throw_right = false;
 global.score_points = 0;
 
+life_bonus = false;
+life_bonus_timer = 60;
+percentage = 0;
+anim_life_bonus = animcurve_get_channel(ac_throw_objects, "curve"); 
+
 objects = [obj_contortionist, obj_elephant, obj_scimitar, obj_pin, obj_ball, obj_torch];
 right_object = instance_create_depth(room_width - 110, 107, sprite_depth, objects[irandom(array_length(objects) - 1)]);	
 right_object.position = 1;

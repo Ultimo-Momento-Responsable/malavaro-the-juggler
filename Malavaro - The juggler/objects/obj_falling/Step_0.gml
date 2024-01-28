@@ -77,6 +77,7 @@ if (bounces > 0) {
 		audio_play_sound_at(snd_haha, malavaro.x, malavaro.y, 0, 100, 300, 1, false, 1);
 		obj_game_controller.lives_left ++;
 		has_gained_life = true;
+		obj_game_controller.life_bonus = true;
 	}
 	
 	if (has_gained_life && bounces % 3 != 0) {

@@ -25,6 +25,7 @@
     {"name":"spr_torch","order":8,"path":"sprites/spr_torch/spr_torch.yy",},
     {"name":"spr_game_over","order":17,"path":"sprites/spr_game_over/spr_game_over.yy",},
     {"name":"snd_pin_fall","order":7,"path":"sounds/snd_pin_fall/snd_pin_fall.yy",},
+    {"name":"seq_lifes_Events1","order":16,"path":"scripts/seq_lifes_Events1/seq_lifes_Events1.yy",},
     {"name":"snd_swing1","order":3,"path":"sounds/snd_swing1/snd_swing1.yy",},
     {"name":"spr_background_final_screen","order":18,"path":"sprites/spr_background_final_screen/spr_background_final_screen.yy",},
     {"name":"spr_lives","order":10,"path":"sprites/spr_lives/spr_lives.yy",},
