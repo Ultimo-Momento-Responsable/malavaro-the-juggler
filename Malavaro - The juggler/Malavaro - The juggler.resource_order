@@ -87,5 +87,8 @@
     {"name":"snd_ohh2","order":7,"path":"sounds/snd_ohh2/snd_ohh2.yy",},
     {"name":"snd_elephant","order":4,"path":"sounds/snd_elephant/snd_elephant.yy",},
     {"name":"snd_ball","order":2,"path":"sounds/snd_ball/snd_ball.yy",},
+    {"name":"spr_credits","order":1,"path":"sprites/spr_credits/spr_credits.yy",},
+    {"name":"rm_credits","order":1,"path":"rooms/rm_credits/rm_credits.yy",},
+    {"name":"obj_credits_controller","order":1,"path":"objects/obj_credits_controller/obj_credits_controller.yy",},
   ],
 }
