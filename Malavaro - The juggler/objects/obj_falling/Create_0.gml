@@ -9,6 +9,7 @@ enum STATES {
 	GROUND = 5
 }
 death_timer = 5 * 60;
+ground_x = x;
 distance_animation = 30;
 state = STATES.IDLE;
 gravity_direction = 270;

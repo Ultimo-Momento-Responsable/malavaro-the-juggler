@@ -54,11 +54,16 @@ switch (state) {
 		break;
 	case STATES.GROUND:
 		death_timer--;
-		speed = 0;
-		gravity = 0;
+		if (abs(hspeed) < (20 / death_timer)) {
+			hspeed = 0;
+			img_angle_spd = 0;
+		} else {
+			hspeed += (hspeed > 0 ? -0.2 : 0.2);
+			img_angle_spd = (image_angle > 0 ? 1 - (5/death_timer) : -1 - (5/death_timer));
+		}
+			
+		image_alpha -= (1 / death_timer);
 		y = room_height;
-		img_angle_spd = 0;
-		image_alpha -= (1/death_timer);
 		if (death_timer == 0) {
 			instance_destroy(self);
 		}
@@ -91,6 +96,7 @@ if((y - sprite_height/2) > room_height && state == STATES.FALLING) {
 	audio_play_sound_at(fall_sound, x, y, 0, 100, 300, 1, false, 1);
 	obj_game_controller.lives_left --;
 	state = STATES.GROUND;
+	gravity = 0;
 }
 	
 image_angle += img_angle_spd;
