@@ -2,7 +2,7 @@
   "resourceType": "GMSprite",
   "resourceVersion": "1.0",
   "name": "spr_malavaro_body",
-  "bbox_bottom": 189,
+  "bbox_bottom": 199,
   "bbox_left": 23,
   "bbox_right": 95,
   "bbox_top": 5,
@@ -13,16 +13,16 @@
   "edgeFiltering": false,
   "For3D": false,
   "frames": [
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"a1af2111-5d0c-442b-be45-671665b1be1e",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"9c3542f1-88b3-452d-88d7-1aff9031940b",},
-    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"1874452f-8c3b-4061-a5ea-c682f237c2f3",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"3724d58e-199f-48a7-a2bb-e74fd9baf2a6",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"924b648c-baa4-45ff-af04-2e177fc86468",},
+    {"resourceType":"GMSpriteFrame","resourceVersion":"1.1","name":"e506a97b-f11f-4ef1-9861-d058efabe6f2",},
   ],
   "gridX": 0,
   "gridY": 0,
   "height": 200,
   "HTile": false,
   "layers": [
-    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"a810d9d7-6218-4fd3-b312-03d940b140c4","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
+    {"resourceType":"GMImageLayer","resourceVersion":"1.0","name":"d7ff1f53-aeb2-4428-92e5-6dcfb9136a9e","blendMode":0,"displayName":"default","isLocked":false,"opacity":100.0,"visible":true,},
   ],
   "nineSlice": {
     "resourceType": "GMNineSliceData",
@@ -79,9 +79,9 @@
     "timeUnits": 1,
     "tracks": [
       {"resourceType":"GMSpriteFramesTrack","resourceVersion":"1.0","name":"frames","builtinName":0,"events":[],"inheritsTrackColour":true,"interpolation":1,"isCreationTrack":false,"keyframes":{"resourceType":"KeyframeStore<SpriteFrameKeyframe>","resourceVersion":"1.0","Keyframes":[
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"a1af2111-5d0c-442b-be45-671665b1be1e","path":"sprites/spr_malavaro_body/spr_malavaro_body.yy",},},},"Disabled":false,"id":"21cb9f7c-21c0-4e34-b03e-2000cdc6d616","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"9c3542f1-88b3-452d-88d7-1aff9031940b","path":"sprites/spr_malavaro_body/spr_malavaro_body.yy",},},},"Disabled":false,"id":"db753f3b-8db9-4586-ade4-ba1110f1b4f7","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
-            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"1874452f-8c3b-4061-a5ea-c682f237c2f3","path":"sprites/spr_malavaro_body/spr_malavaro_body.yy",},},},"Disabled":false,"id":"d2d25d5e-5db9-41df-867a-8cf17727082f","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"3724d58e-199f-48a7-a2bb-e74fd9baf2a6","path":"sprites/spr_malavaro_body/spr_malavaro_body.yy",},},},"Disabled":false,"id":"0dc4bc3b-c0d0-4c5e-9932-0509308d0d7d","IsCreationKey":false,"Key":0.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"924b648c-baa4-45ff-af04-2e177fc86468","path":"sprites/spr_malavaro_body/spr_malavaro_body.yy",},},},"Disabled":false,"id":"2ceeb528-3603-4452-b148-7723857e91b5","IsCreationKey":false,"Key":1.0,"Length":1.0,"Stretch":false,},
+            {"resourceType":"Keyframe<SpriteFrameKeyframe>","resourceVersion":"1.0","Channels":{"0":{"resourceType":"SpriteFrameKeyframe","resourceVersion":"1.0","Id":{"name":"e506a97b-f11f-4ef1-9861-d058efabe6f2","path":"sprites/spr_malavaro_body/spr_malavaro_body.yy",},},},"Disabled":false,"id":"79afa9af-1d25-45cf-bf48-6d5a3ab21e65","IsCreationKey":false,"Key":2.0,"Length":1.0,"Stretch":false,},
           ],},"modifiers":[],"spriteId":null,"trackColour":0,"tracks":[],"traits":0,},
     ],
     "visibleRange": null,

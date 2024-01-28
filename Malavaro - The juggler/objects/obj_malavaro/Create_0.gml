@@ -20,6 +20,7 @@ power_up_seconds = 10;
 
 // Animation stuff
 active_sequence = -1;
+sequence_layers = layer_create(depth);
 juggling_timer = 64;
 
 audio_listener_position(room_width / 2, room_height, 0);

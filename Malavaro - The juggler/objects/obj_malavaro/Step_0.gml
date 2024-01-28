@@ -101,7 +101,7 @@ if (place_meeting(x, y, obj_falling)) {
 			
 			// Juggling animation stuff
 			if (active_sequence == -1) {
-				active_sequence = layer_sequence_create(0, x, y, seq_malavaro_juggling);
+				active_sequence = layer_sequence_create(sequence_layers, x, y, seq_malavaro_juggling);
 				layer_sequence_x(active_sequence, x);
 				layer_sequence_y(active_sequence, y);
 				layer_sequence_angle(active_sequence, image_angle);	
