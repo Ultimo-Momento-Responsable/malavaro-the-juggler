@@ -1,5 +1,16 @@
-/// @description Inserte aquí la descripción
-// Puede escribir su código en este editor
+// Juggling animation sequence
+if (active_sequence != -1) {
+	juggling_timer --;
+	layer_sequence_x(active_sequence, x);
+	layer_sequence_y(active_sequence, y);
+	layer_sequence_angle(active_sequence, image_angle);
+	
+	if (juggling_timer == 0) {
+		layer_sequence_destroy(active_sequence);
+		//visible = true;
+		active_sequence = -1;
+	}
+}
 
 // Idle
 if(speed == 0 && image_angle == 0) {
@@ -74,6 +85,16 @@ if (place_meeting(x, y, obj_falling)) {
 			if (place_meeting(x, y, obj_contortionist)) {
 				_obj_collision_speed = _obj_collision.hspeed;
 			}
+			
+			// Juggling animation stuff
+			if (active_sequence == -1) {
+				active_sequence = layer_sequence_create(0, x, y, seq_malavaro_juggling);
+				layer_sequence_x(active_sequence, x);
+				layer_sequence_y(active_sequence, y);
+				layer_sequence_angle(active_sequence, image_angle);	
+				juggling_timer = 64;
+				//visible = false;
+			} 
 		}
 	}
 }

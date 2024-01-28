@@ -16,6 +16,10 @@ is_idle = true;
 idle_time = 0;
 idle_countdown = 0;
 
+// Animation stuff
+active_sequence = -1;
+juggling_timer = 64;
+
 audio_listener_position(room_width / 2, room_height, 0);
 audio_listener_orientation(room_width / 2, 0, 0, 0, 1, 0);
 
@@ -56,8 +60,7 @@ function get_tilt(_angle) {
 }
 
 
-function change_direction_on_collision(_speed) {
-	
+function change_direction_on_collision(_speed) {	
 	hspeed = _speed;
 	return hspeed < 0 ? -1 : 1;
 }

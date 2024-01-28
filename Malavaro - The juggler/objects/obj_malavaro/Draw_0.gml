@@ -16,5 +16,4 @@ draw_surface_ext(_surface_drop_shadow, 6, 4, 1, 1, 0, c_black, 0.5);
 
 surface_free(_surface_drop_shadow);
 
-
-draw_self();
+if (active_sequence == -1) draw_self();
