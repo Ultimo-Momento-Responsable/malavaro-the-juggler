@@ -30,3 +30,6 @@ spr_score_frame = 0;
 
 audio_play_sound(snd_music, 0, true);
 played_game_over_sound = false;
+
+counter_ohh = 1;
+ohh_sounds = [snd_ohh1, snd_ohh2, snd_ohh3]

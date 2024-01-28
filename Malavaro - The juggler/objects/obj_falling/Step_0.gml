@@ -84,14 +84,14 @@ if (bounces > 0) {
 		has_gained_life = false;
 	}
 	
-	if(!has_scored && ((x - abs(sprite_width / 1.2)) > room_width || (x + abs(sprite_width / 1.2)) < 0)) {
+	if(!has_scored && ((x - abs(sprite_width / 1.5)) > room_width || (x + abs(sprite_width / 1.5)) < 0)) {
 		// Should score
 		has_scored = true;
 		global.score_points += score_points * power(2, bounces - 1);
 		instance_destroy(self);
 	} 
 } else {
-	if ((x - abs(sprite_width / 1.2)) > room_width || (x + abs(sprite_width / 1.2)) < 0) {
+	if ((x - abs(sprite_width / 1.5)) > room_width || (x + abs(sprite_width / 1.5)) < 0) {
 		instance_destroy(self);
 	}
 }
